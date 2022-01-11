@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+ <!--    <bean id="eng" class="com.te.springdependency.Engine">
+    <constructor-arg value="Ferrari"></constructor-arg>
+    <constructor-arg value="3000"></constructor-arg>
+    </bean>
+    
+    <bean id="turbo"  class="com.te.springdependency.TurboEngine"></bean>
+    
+    <bean  id="car" class="com.te.springdependency.Car">
+    <constructor-arg ref="eng"></constructor-arg>
+    </bean>
+    
+     <bean id="ine" class="com.te.springdependency.Engine">
+    <property name="name" value="ford"/>
+    <property name="capacity" value="6000.00"/>
+    </bean>
+    
+    <bean class="com.te.springdependency.Car">
+    <property name="name" value="Rolls Royce"/>
+    <property name="e" ref="ine"/>
+    </bean>
+    
+   <bean class="com.te.springscope.Demo" scope="prototype"/> -->
+   
+   <bean class="com.te.springautowiring.Laptop" autowire="constructor"/>
+   
+   <bean id="b"  class="com.te.springautowiring.Battery">
+   <constructor-arg value="thosibha"/>
+   </bean>
+   
+   <bean id="s" class="com.te.springautowiring.Screen"/>
+   
+   <bean id="hardDisk1" class="com.te.springautowiring.Harddisk">
+   <property name="name" value="w.d"/>
+   <property name="name2" value="shashi"></property>
+   </bean>
+   
+   <bean id="hd2" class="com.te.springautowiring.Harddisk">
+   <property name="name" value="sandisk"/>
+   <property name="name2" value="apoo"/>
+   </bean>
+   
+
+</beans>
